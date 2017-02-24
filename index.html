@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <title>Home | Plant and Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="apple-touch-icon" href="images/favicon.ico" type="image/x-icon"/>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:700|Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <div class="container-fluid section1 ">
+    <nav class="navbar navbar-light">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <a class="navbar-brand font-brandon" href="#">
+            <img src="images/logo200_1.png" class="d-inline-block align-top" style="width: 80px; height: 80px; object-fit: cover;">
+            <div class="navbar-text">
+              <h1 class="navbar-brand">PLANT AND MACHINERY</h1><br>
+              <h2 class="navbar-brand nav-sub">Superior Service, Quick Turn Around</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div id="c1" class="com-soon font-brandon ">
+            COMING SOON.
+          </div>
+        </div>
+      </div>
+    </nav>
+
+      <div class="row maintitle font-brandon ">
+        <div class="col-md-3"></div>
+          <div class="col-md-6 ">
+              <div class="row ">
+                <span class="text-uppercase" >CHOOSE YOUR MACHINES YOURSELVES NOW.</span>
+              </div>
+              <div class="row">
+                <span class="main-sub mt-3" >Best part is, its just few clicks away.</span>
+              </div>
+              <div class="row">
+              <button type="button" class="btn btn-outline-primary mt-5 font-brandon" data-toggle="modal" data-target="#subsModal">Notify Me</button>
+              <span class="glyphicon glyphicon-remove" style="color:white;"></span>
+                </div>
+
+        </div>
+      </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-9">
+        <input type="email" class="form-control" id="InputEmail" placeholder="Enter your email address">
+      </div>
+        <div class="col-md-3">
+        <button type="button" class="btn btn-primary">subscribe</button>
+          </div>
+                  </div>
+            </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<footer class="footer fixed-bottom">
+  <div id="c2" class="row">
+    <div class="col-sm-12">
+      <div class="com-soon font-brandon text-center">
+        COMING SOON.
+      </div>
+    </div>
+  </div>
+<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="http://www.plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+</footer>
+<script>
+jQuery(document).ready(function($){
+  var navheight= ($(".section1").height()-$(".maintitle").height()-$(".navbar").height()-$(".footer").height())/2;
+    $(".maintitle").css({"margin-top":navheight+"px"});
+});
+$( window ).resize(function() {
+  var navheight= ($(".section1").height()-$(".maintitle").height()-$(".navbar").height()-$(".footer").height())/2;
+    $(".maintitle").css({"margin-top":navheight+"px"});
+  });
+</script>
+</body>
+</html>
